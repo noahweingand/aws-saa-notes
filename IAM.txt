@@ -1,0 +1,34 @@
+IAM - Identity and Access Management
+
+Three types: users, groups, and roles.
+	Users - usually a physical person
+	Groups - functions (admins, devops), teams (engineering, design) [contains users!]
+	Roles - internal usage within AWS resources
+Root account should never be shared or used.
+Users must be created with proper permissions.
+Policies written in JSON.
+
+MFA can be setup for strengthened security.
+IAM has predefined "managed policies".
+Best to give users the minimal amount of permissions they need to perform their job (least privilege principle)
+
+IAM Federation 
+	- big enterprises usually integrate their own repository of users with IAM
+		- allows login using one's company credentials
+	- Identity Federation uses the SAML standard (Active Directory)
+
+One IAM user per physical person.
+One IAM Role per application
+Never share IAM credentials.
+Never write IAM credentials in code or commit them. Ever.
+Never use root account except for inital setup.
+
+Hands On
+	Delete root access keys
+	activate MFA on your root account
+	create individual IAM users (spits out csv)
+	use groups to assign permissions
+	apply an IAM password policy (customize password requirements and expiration rates)
+
+
+

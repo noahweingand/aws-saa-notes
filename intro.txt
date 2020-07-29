@@ -1,0 +1,18 @@
+Course Introduction
+
+AWS is a cloud provider.
+	- they provide servers and services that are on demand and easily scalable.
+
+AWS Regions
+	- located around the world
+	- each region is a set of data centers
+	- AWS services are region-scoped or a global service 
+	- some services are not available in certain regions
+
+AWS Availability Zones
+	- one or more discrete data centers with redundant power, networking, and connectivity
+	- all separate from each other (isolated from disasters, geographically distant)
+	- they're connected with high bandwidth and low-latency networking
+	- each region has many availability zones
+	- usually 3 per region (min 2, max 6)
+	
