@@ -1,0 +1,28 @@
+EC2 - Elastic Cloud Compute
+    - one of the most popular of AWS offering
+    - consists of:
+        - renting virtual machines (EC2)
+        - storing data on virtual drives (EBS)
+        - distributing load across machines (ELB)
+        - scaling the services using an auto-scaling group (ASG)
+    - fundamental to how Cloud works
+
+Launching EC2 instance running Linux using AWS Console
+1. EC2
+2. choose region closest or that makes sense for your use case
+3. Launch instance
+    1. Choose AMI (Amazon Machine Image) - OS that will be running
+    2. Choose instance type - how powerful you want machine to be
+    3. Configure instance 
+        - subnet - which AZ you want instance in
+    4. Add storage 
+    5. Add Tags
+        - add key (name) and value (whatever you want)
+    6. Choose Security group
+        - essentially firewall for your instance
+        - allow SSH on port 22 (default)
+        - Source: Custom 0.0.0.0/0
+4. Launch
+5. Create new key pair (for SSH) [downloads .pem file]
+
+
